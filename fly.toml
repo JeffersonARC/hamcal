@@ -1,0 +1,29 @@
+# fly.toml app configuration file generated for hamcal on 2026-03-30T11:42:17-05:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app            = "hamcal"
+primary_region = "iad"
+
+[build]
+
+[env]
+  EVENTS_DB = "/data/n5lcc.db"
+
+[[mounts]]
+  source      = "n5lcc_data"
+  destination = "/data"
+
+[http_service]
+  internal_port        = 5001
+  force_https          = true
+  auto_stop_machines   = "stop"
+  auto_start_machines  = true
+  min_machines_running = 0
+  processes            = ["app"]
+
+[[vm]]
+  memory    = "1gb"
+  cpu_kind  = "shared"
+  cpus      = 1

@@ -1,0 +1,4 @@
+.venv/*/*.*
+data/*.*
+events.db
+n5lcc.db

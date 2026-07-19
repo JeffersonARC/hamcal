@@ -6,12 +6,12 @@
     "configurations": [
         
         {
-            "name": "n5lcc",
+            "name": "Remote-shack",
             "type": "debugpy",
             "request": "launch",
             "program": "app.py",
             "console": "integratedTerminal",
-            "python": "${workspaceFolder}/venv/bin/python"
+            "python": "${command:python.interpreterPath}"
         }
     ]
 }

@@ -1,4 +1,4 @@
-# N5LCC Ham Radio Club Calendar
+# HAMCAL Ham Radio Club Calendar
 
 No login required to view or add events.
 Built with Flask + SQLite3 + FullCalendar.js + Bootstrap 5.
@@ -55,7 +55,7 @@ Change the port from 5000 to 8080:
 ### 4 — Launch on Fly.io
 
     fly launch
-    # App name: n5lcc-calendar
+    # App name: hamcal
     # Region:   dfw  (closest to New Orleans)
     # Postgres: No
     # Deploy now: No

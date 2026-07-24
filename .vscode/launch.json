@@ -6,7 +6,7 @@
     "configurations": [
         
         {
-            "name": "Remote-shack",
+            "name": "hamcal",
             "type": "debugpy",
             "request": "launch",
             "program": "app.py",

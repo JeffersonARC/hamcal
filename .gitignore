@@ -1,4 +1,3 @@
 .venv
 data
-events.db
-n5lcc.db
+hamcal.db

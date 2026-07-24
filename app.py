@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import sqlite3, os
 
 app = Flask(__name__)
-DB = os.environ.get("EVENTS_DB", os.path.join(os.path.dirname(__file__), "data/n5lcc.db"))
+DB = os.environ.get("EVENTS_DB", os.path.join(os.path.dirname(__file__), "data/hamcal.db"))
 
 def get_db():
     conn = sqlite3.connect(DB)
@@ -75,6 +75,5 @@ def delete_event(event_id):
     return jsonify({"ok": True})
 
 if __name__ == "__main__":
-    init_db()
     port = int(os.environ.get("PORT", 5001))
     app.run(debug=False, host="0.0.0.0", port=port)
